@@ -1,15 +1,3 @@
-import React, {Component} from "react";
-import favourites from "./img/favourites.svg";
-import popular from "./img/popular.svg";
-import mover from "./img/Top-mover.svg";
-import shares from "./img/shares.svg";
-import crypto from "./img/crypto.svg";
-import fx from "./img/fx1.svg";
-import commodities from "./img/commodities.svg";
-import weekend from "./img/weekend.svg";
-import new_img from "./img/new.svg";
-import search from './img/Iconsearch.svg'
-import blue from './img/Group158blue.svg'
 import alert from './img/alertalert.svg'
 import star from './img/Iconstar.svg'
 import settings from './img/Frame965settings.svg'
@@ -26,141 +14,14 @@ import third from './img/unsplash_7I5A7630GpY3.svg'
 import fourth from './img/unsplash_7I5A7630GpY4.svg'
 import fives from './img/unsplash_7I5A7630GpY5.svg'
 import sixth from './img/unsplash_7I5A7630GpY6.svg'
-import './2Block.scss'
+import './main_block.scss'
+import React, {Component} from "react";
 
-export default class Mainpart extends Component {
+
+export default class Main_block extends Component {
     render() {
         return (
-            <div className='section'>
-                <div className='watchList'>
-                    <p className='list'>WATCHLIST</p>
-                    <div id='shares'>
-                        <div className='point'>
-                            <img src={favourites}
-                                 height="22"
-                                 width='22'
-                                 className='icon'
-                                 alt='image'
-                            />
-                            <a href='#' className='item'>Favourites</a>
-                        </div>
-                    </div>
-                    <div id='shares'>
-                        <div className='point'>
-                            <img src={popular}
-                                 height="22"
-                                 width='22'
-                                 className='icon'
-                                 alt='image'
-                            />
-                            <a href='#' className='item'>Popular</a>
-                        </div>
-                    </div>
-                    <div id='shares'>
-                        <div className='point'>
-                            <img src={mover}
-                                 height="22"
-                                 width='22'
-                                 className='icon'
-                                 alt='image'
-                            />
-                            <a href='#' className='item'>Top Mover</a>
-                        </div>
-                    </div>
-
-                    <div id='shares'>
-                        <div className='point'>
-                            <img src={shares}
-                                 height="22"
-                                 width='22'
-                                 className='icon'
-                                 alt='image'
-                            />
-                            <a href='#' className='item' id='share_point'>Shares</a>
-                        </div>
-                    </div>
-                    <div id='shares'>
-                        <div className='point'>
-                            <img src={crypto}
-                                 height="22"
-                                 width='22'
-                                 className='icon'
-                                 alt='image'
-                            />
-                            <a href='#' className='item'>Crypto</a>
-                        </div>
-                    </div>
-                    <div id='shares'>
-                        <div className='point'>
-                            <img src={fx}
-                                 height="22"
-                                 width='22'
-                                 className='icon'
-                                 alt='image'
-                            />
-                            <a href='#' className='item'>FX</a>
-                        </div>
-                    </div>
-                    <div id='shares'>
-                        <div className='point'>
-                            <img src={commodities}
-                                 height="22"
-                                 width='22'
-                                 className='icon'
-                                 alt='image'
-                            />
-                            <a href='#' className='item'>Commodities</a>
-                        </div>
-                    </div>
-                    <div id='shares'>
-                        <div className='point'>
-                            <img src={weekend}
-                                 height="22"
-                                 width='22'
-                                 className='icon'
-                                 alt='image'
-                            />
-                            <a href='#' className='item'>Weekend</a>
-                        </div>
-                    </div>
-                    <div id='shares'>
-                        <div className='point'>
-                            <img src={new_img}
-                                 height="22"
-                                 width='22'
-                                 className='icon'
-                                 alt='image'
-                            />
-                            <a href='#' className='item'>New</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div className='schedules'>
-                    <div className='search'>
-                        <img src={search}
-                             height='12'
-                             width='12'
-                             alt='search image'
-                        />
-                        <p className='search_name'>Search</p>
-
-                    </div>
-                    <div className='blocks'>
-                        <div className='column1'>
-                            <p className='title'>AAPL</p>
-                            <p className='sm_text'>Apple Inc.</p>
-                        </div>
-                        <div className='column2'>
-                            <p className='percent'>+0,39%</p>
-                            <img className='chart'
-                                 src={blue}
-                                 alt='chart'/>
-                        </div>
-                        <div className='price'>$1488,90</div>
-                    </div>
-
-                </div>
+            <div >
                 <div className='main_info'>
                     <div className='title_info'>
                         <img src={alert}
@@ -170,8 +31,8 @@ export default class Mainpart extends Component {
                              className='star'
                              alt='favourite'/>
                         <div>
-                            <p className='title_text'>AAPL</p>
-                            <p className='title_small_text'>Apple Inc</p>
+                            <p className='title_text_main_info'>AAPL</p>
+                            <p className='title_small_text_main_info'>Apple Inc</p>
                         </div>
                         <p className='percent_title'>$148.9</p>
                         <p className='percent_blue_title'>+0,39% </p>
@@ -215,7 +76,7 @@ export default class Mainpart extends Component {
                         </div>
                         <div className='boxes'>
                             <div className='box trend'>
-                                <div className='first_line'>
+                                <div className='first_line_box'>
                                     <p className='caption'>Traders Trend</p>
                                     <img src={question}
                                          alt='question img'/>
@@ -234,7 +95,7 @@ export default class Mainpart extends Component {
                                 </div>
                             </div>
                             <div className='box opinions'>
-                                <div className='first_line'>
+                                <div className='first_line_box'>
                                     <p className='caption'>Bloggers Opinions</p>
                                     <img src={question}
                                          alt='question img'/></div>
@@ -256,7 +117,7 @@ export default class Mainpart extends Component {
                                 </div>
                             </div>
                             <div className='box activity'>
-                                <div className='first_line'>
+                                <div className='first_line_box'>
                                     <p className='caption'>Traders Trend</p>
                                     <img src={question}
                                          alt='question img'/>
@@ -273,7 +134,7 @@ export default class Mainpart extends Component {
                                 </div>
                             </div>
                             <div className='box activity'>
-                                <div className='first_line'>
+                                <div className='first_line_box'>
                                     <p className='caption'>Traders Trend</p>
                                     <img src={question}
                                          alt='question img'/>
@@ -288,7 +149,7 @@ export default class Mainpart extends Component {
                                 </div>
                             </div>
                             <div className='box trend'>
-                                <div className='first_line'>
+                                <div className='first_line_box'>
                                     <p className='caption'>News Sentiment</p>
                                     <img src={question}
                                          alt='question img'/>
@@ -454,8 +315,7 @@ export default class Mainpart extends Component {
                         </div>
                     </div>
                 </div>
-            </div>)
-
-
+            </div>
+        )
     }
 }
